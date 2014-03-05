@@ -31,7 +31,7 @@ Register the bundle in `app_kernel.php`
 
 ```
 if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-    $bundles[] = new Nelmio\ApiDocBundle\NelmioApiDocBundle();
+    $bundles[] = new MarijnKoesen\CodeGeneratorBundle\MarijnKoesenCodeGeneratorBundle();
 }
 ```
 
