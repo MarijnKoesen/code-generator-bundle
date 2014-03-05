@@ -1,0 +1,5 @@
+code_generator_index:
+    pattern: /
+    defaults: { _controller: MarijnKoesenCodeGeneratorBundle:CodeGenerator:index }
+    requirements:
+        _method: GET|POST

@@ -1,0 +1,33 @@
+<html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="{{ asset('bundles/marijnkoesencodegenerator/libs/bootstrap/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('bundles/marijnkoesencodegenerator/libs/bootstrap/css/bootstrap-theme.min.css') }}">
+<link rel="stylesheet" href="{{ asset('bundles/marijnkoesencodegenerator/libs/syntaxhighlighter_3.0.83/styles/shCoreDefault.css') }}"/>
+<link rel="stylesheet" href="{{ asset('bundles/marijnkoesencodegenerator/libs/syntaxhighlighter_3.0.83/styles/shThemeGithub.css') }}"/>
+<link rel="stylesheet" href="{{ asset('bundles/marijnkoesencodegenerator/css/style.css') }}">
+
+<script src="{{ asset('bundles/marijnkoesencodegenerator/libs/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('bundles/marijnkoesencodegenerator/libs/bootstrap/js/bootstrap.min.js') }}"></script>
+
+<script type="text/javascript" src="{{ asset('bundles/marijnkoesencodegenerator/libs/syntaxhighlighter_3.0.83/scripts/shCore.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/marijnkoesencodegenerator/libs/syntaxhighlighter_3.0.83/scripts/shBrushPhp.js') }}"></script>
+
+<body>
+
+<div id="main">
+    <h1>CodeGenerator</h1>
+
+    {{ generatorHtml|raw }}
+</div>
+
+<script>
+    $('.nav-tabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+
+    $('.nav-tabs a[href="#class"]').tab('show');
+    SyntaxHighlighter.all();
+</script>
+</body>
+</html>
