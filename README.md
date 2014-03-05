@@ -16,7 +16,7 @@ Include the bundle using composer:
 
 ```
   "require-dev": {
-    "marijnkoesen/code-generator-bundle": "0.1*",
+    "marijnkoesen/code-generator-bundle": "~0.1.0",
   }
 
 ```
