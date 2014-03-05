@@ -15,7 +15,7 @@
     ],
     "require": {
         "symfony/framework-bundle": "~2.1",
-        "marijnkoesen/php-code-generator": "0.1.*",
+        "marijnkoesen/php-code-generator": "~0.1.0",
         "php": ">=5.3.0"
     },
     "autoload": {
